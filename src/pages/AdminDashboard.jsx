@@ -14,7 +14,7 @@ const AdminDashboard = () => {
   const [recentDraws, setRecentDraws] = useState([]);
   const [selectedProof, setSelectedProof] = useState(null);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app/';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app';
 
   useEffect(() => {
     fetchStats();

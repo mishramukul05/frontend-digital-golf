@@ -24,7 +24,7 @@ const UserDashboard = () => {
   // Extract userId directly from AuthContext (handling both id and userId structures)
   const userId = user?.id || user?.userId;
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app/';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app';
 
   // Fetch existing scores when the page loads
   useEffect(() => {

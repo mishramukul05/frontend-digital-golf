@@ -20,7 +20,7 @@ const UserAuth = ({ isLogin: isLoginProp = true }) => {
     const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
 
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app/';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app';
       const res = await axios.post(`${API_URL}${endpoint}`, formData, {
         withCredentials: true // Ensure cookie is processed
       });
