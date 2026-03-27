@@ -19,7 +19,7 @@ const AdminAuth = () => {
     const endpoint = isLogin ? '/api/auth/admin/login' : '/api/auth/admin/register';
 
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://https://backend-digital-golf.vercel.app/';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app/';
       const res = await axios.post(`${API_URL}${endpoint}`, formData, {
         withCredentials: true
       });  

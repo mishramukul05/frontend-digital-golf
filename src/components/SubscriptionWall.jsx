@@ -9,7 +9,7 @@ const SubscriptionWall = ({ children }) => {
   const [error, setError] = useState('');
   
   const userId = user?.id || user?.userId;
-  const API_URL = import.meta.env.VITE_API_URL || 'http://https://backend-digital-golf.vercel.app/';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://backend-digital-golf.vercel.app/';
 
   useEffect(() => {
     const fetchUserStatus = async () => {
